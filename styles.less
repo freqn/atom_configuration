@@ -1,0 +1,51 @@
+/* Use Atom Dark (UI Theme)/Retro Gruvbox (Syntax Theme)
+ * Your Stylesheet
+ *
+ * This stylesheet is loaded when Atom starts up and is reloaded automatically
+ * when it is changed.
+ *
+ * If you are unfamiliar with LESS, you can read more about it here:
+ * http://www.lesscss.org
+ */
+
+.icon-file-directory::before {
+    color: #FFD058;
+}
+.icon-file-text::before {
+    color: #2ac684;
+    text-shadow: -1px 2px 3px rgba(0, 0, 0, 0.2);
+}
+tabs-bar, .tab-bar {
+height: 35px;
+padding: 0;
+box-sizing: border-box;
+margin-top: -5px;
+}
+tabs-bar tabs-tab.active, .tab-bar tabs-tab.active, tabs-bar .tab.active, .tab-bar .tab.active, tabs-bar tabs-tab.active:before, .tab-bar tabs-tab.active:before, tabs-bar .tab.active:before, .tab-bar .tab.active:before {
+color: rgb(252, 241, 181);
+}
+tabs-bar tabs-tab .title.icon-tools, .tab-bar .tab .title.icon-tools {
+color: #7B7B7B;
+}
+.tab-bar .tab.modified:not(:hover) .close-icon {
+  border: 3px solid #00E2FF;
+  border-radius: 15px;
+}
+.inline-block.atom-nyancat {
+  height: 20px;
+}
+.icon-squirrel {
+  color: #e9891e;
+}
+.terminal-plus .xterm {
+  background-color: #1D1F21;
+  color: #AAAAAA;
+
+  // ::selection {
+  //   background-color: ;
+  // }
+  //
+  // .terminal-cursor {
+  //   background-color: ;
+  // }
+}

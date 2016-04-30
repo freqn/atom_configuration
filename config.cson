@@ -1,0 +1,180 @@
+"*":
+  Zen:
+    fullscreen: false
+  "atom-terminal":
+    app: "iterm"
+    setWorkingDirectory: false
+  "block-cursor":
+    global:
+      blinkOff:
+        backgroundColor:
+          red: 41
+          green: 44
+          blue: 47
+          alpha: 0
+        borderColor:
+          red: 0
+          green: 216
+          blue: 112
+          alpha: 1
+        borderStyle: "i-beam"
+        pulseDuration: 1
+      blinkOn:
+        backgroundColor:
+          red: 23
+          green: 80
+          blue: 89
+          alpha: 0
+        borderColor:
+          red: 0
+          green: 216
+          blue: 112
+          alpha: 1
+        borderStyle: "bordered-box"
+  "browser-plus": {}
+  core:
+    closeEmptyWindows: false
+    disabledPackages: [
+      "wrap-guide"
+      "tree-view-open-files"
+      "rails-transporter"
+      "language-ruby-on-rails"
+      "language-ruby-without-erb"
+      "angularjs-snippets"
+      "snake"
+      "backbonejs-snippets"
+      "merge-conflicts"
+      "xml-formatter"
+      "neon-cursor"
+      "ember-cli-helper"
+      "minimap"
+      "terminal-plus"
+    ]
+    themes: [
+      "atom-dark-ui"
+      "retro-gruvbox"
+    ]
+  coverage: {}
+  editor:
+    invisibles: {}
+    showIndentGuide: true
+    showInvisibles: true
+    softTabs: false
+    tabType: "soft"
+  "ember-cli-helper": {}
+  emmet: {}
+  "ever-notedown": {}
+  "exception-reporting":
+    userId: "97f99ab7-ae71-051e-96e2-a284163a95a2"
+  "gist-it":
+    newGistsDefaultToPrivate: true
+    openAfterCreate: true
+    useHttp: true
+    userToken: "98ce85973eb728cc5a5b1cb8956feaf23c53296d"
+  "highlight-selected": {}
+  "markdown-preview-plus": {}
+  "merge-conflicts": {}
+  minimap: {}
+  "neon-cursor":
+    cursorType: "box"
+  pigments:
+    groupPaletteColors: "by file"
+    markerType: "dot"
+    mergeColorDuplicates: true
+    sortPaletteColors: "by color"
+  "platformio-ide-terminal":
+    ansiColors:
+      normal:
+        black:
+          red: 20
+          green: 51
+          blue: 29
+          alpha: 1
+        blue:
+          red: 59
+          green: 125
+          blue: 147
+          alpha: 1
+        green:
+          red: 59
+          green: 142
+          blue: 49
+          alpha: 1
+      zBright:
+        brightBlue:
+          red: 69
+          green: 124
+          blue: 148
+          alpha: 1
+    core:
+      mapTerminalsTo: "File"
+      workingDirectory: "Active File"
+    style:
+      fontFamily: "Source Code Pro for Powerline"
+      fontSize: "16"
+      theme: "pro"
+  "rails-transporter": {}
+  "remote-atom": {}
+  "sync-settings":
+    _analyticsUserId: "d8d2795b-8edd-4d78-9166-8ae93afbe8f7"
+    gistId: "c9a9babfa1d04a76dda7b9ce1c14c842"
+    personalAccessToken: "766ee7cc024c12ca9051081951b053a76d291a1b"
+  term2: {}
+  "terminal-plus":
+    ansiColors:
+      normal:
+        black:
+          alpha: 1
+          blue: 42
+          green: 41
+          red: 41
+        blue:
+          alpha: 1
+          blue: 152
+          green: 166
+          red: 130
+        cyan:
+          alpha: 1
+          blue: 152
+          green: 166
+          red: 130
+        green:
+          alpha: 1
+          blue: 0
+          green: 188
+          red: 184
+      zBright:
+        brightBlue:
+          alpha: 1
+          blue: 3
+          green: 190
+          red: 255
+        brightCyan:
+          alpha: 1
+          blue: 182
+          green: 189
+          red: 67
+    core:
+      workingDirectory: "Active File"
+    style:
+      animationSpeed: 0
+      defaultPanelHeight: "250px"
+      fontFamily: "Source Code Pro for Powerline"
+      fontSize: "16"
+      theme: "pro"
+    toggles:
+      autoClose: true
+  "tree-view":
+    hideVcsIgnoredFiles: true
+  "tree-view-open-files":
+    maxHeight: 110
+  welcome:
+    showOnStartup: false
+  "xml-formatter": {}
+".ini.source":
+  editor:
+    autoIndent: false
+    tabLength: 1
+"sync-settings":
+    gistId: "c9a9babfa1d04a76dda7b9ce1c14c842"
+    personalAccessToken: "766ee7cc024c12ca9051081951b053a76d291a1b"

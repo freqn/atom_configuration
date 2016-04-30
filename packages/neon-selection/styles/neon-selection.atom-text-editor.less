@@ -1,0 +1,23 @@
+@import "ui-variables";
+
+@-webkit-keyframes neon-selection {
+    0% {
+        box-shadow: 0 0 3px 2px rgb(1, 1, 241), 0 0 3px 2px rgb(16, 177, 241) inset;
+        box-shadow: 0 0 3px 2px rgb(255, 1, 1), 0 0 3px 2px rgb(16, 177, 241), 0 0 3px 2px rgb(255, 1, 1), 0 0 3px 2px rgb(16, 177, 241);
+        background: rgba(0, 249, 145, .3) !important;
+    }
+    100% {
+        box-shadow: 0 0 4px 0px rgb(0, 249, 145), 0 0 4px 0px rgb(244, 73, 52) inset;
+        background: rgba(0, 249, 145, .1) !important;
+    }
+}
+
+atom-text-editor .selection .region,
+:host .selection .region {
+    border: 1px solid rgb(0, 249, 145, 1);
+    border-radius: 3px;
+    background: rgba(0, 249, 145, .1) !important;
+    box-shadow: 0 0 1px 0px rgb(0, 249, 145), 0 0 1px 0px rgb(0, 249, 145) inset;
+    -webkit-animation: neon-selection 0.3s linear infinite;
+    opacity: 1 !important;
+}

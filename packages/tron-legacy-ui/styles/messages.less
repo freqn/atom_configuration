@@ -1,0 +1,46 @@
+@import "ui-variables";
+
+ul.background-message {
+    &:extend(.rad_grad);
+    font-weight: bold;
+    color: rgba(0, 0, 0, .2);
+    position: relative;
+    &:before, &:after {
+        content: "";
+        position: absolute;
+        height: 2px;
+        border-radius: 50%;
+        border-top-right-radius: 2px;
+        border-bottom-right-radius: 2px;
+        border-top-left-radius: 100%;
+        border-bottom-left-radius: 100%;
+        width: 500px;
+        left: -510px;
+    }
+    &:before {
+        top: 50%;
+        margin-top: -40px;
+        background-color: @orange;
+        box-shadow: 0 0 10px 2px @orange;
+        animation: grid 3s 0.75s infinite cubic-bezier(.39,.05,.93,-0.03);
+    }
+    &:after {
+        bottom: 50%;
+        margin-bottom: -40px;
+        background-color: @blue;
+        box-shadow: 0 0 10px 2px @blue;
+        animation: grid 3s infinite cubic-bezier(.39,.05,.93,-0.03);
+    }
+    li {
+        color: fade(@pane, 85%);
+    }
+}
+
+@keyframes grid {
+    0%   {
+        left: -510px;
+    }
+    100% {
+        left: 105%;
+    }
+}

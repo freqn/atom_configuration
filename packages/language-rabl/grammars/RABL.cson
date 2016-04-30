@@ -1,0 +1,12 @@
+'fileTypes': ['rabl']
+'name': 'RABL'
+'patterns': [
+  {
+    'match': 'object|attributes|collection|attribute|child|glue|node|extends|cache'
+    'name': 'keyword.source.rabl'
+  }
+  {
+    'include': 'source.ruby'
+  }
+]
+'scopeName': 'source.ruby.rabl'

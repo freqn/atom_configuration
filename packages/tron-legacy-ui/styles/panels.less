@@ -1,0 +1,113 @@
+@import "ui-mixins";
+@import "ui-variables";
+@import "buttons";
+
+.panel {
+    &.bordered {
+        border: 1px solid @base-border-color;
+        border-radius: @component-border-radius;
+    }
+}
+
+.panels-item {
+    &:extend(.rad_grad);
+}
+
+atom-panel, .tool-panel {
+    .text(normal);
+    position: relative;
+
+    background-color: @tool-panel-background-color;
+
+    &.bottom, &.panel-bottom {
+        border-top: 1px solid @tool-panel-border-color;
+        box-shadow: inset 0 1px 0 @background-color-highlight;
+        background-color: @black;
+        border-top: 1px solid fade(@blue, 40%);
+        border-left: 1px solid fade(@blue, 40%);
+    }
+
+    &.left, &.panel-left {
+        background-color: @black;
+        box-shadow: inset 0 0 15px 5px lighten(@black, 10%);
+        * {
+            background-color: transparent;
+        }
+    }
+
+    &.right, &.panel-right {
+        border-left: 1px solid @tool-panel-border-color;
+        background-color: transparent;
+    }
+}
+
+.inset-panel {
+    position: relative;
+    background-color: @inset-panel-background-color;
+}
+
+.is-blurred {
+    atom-panel,
+    .inset-panel {
+    }
+}
+
+.panel-heading {
+    .text(normal);
+
+    border-bottom: 1px solid @panel-heading-border-color;
+    border-top: 1px solid fadein(@background-color-highlight, 10%);
+
+    background-color: transparent;
+    background-image: -webkit-linear-gradient(@panel-heading-background-color, darken(@panel-heading-background-color, 10%));
+
+    .btn {
+        padding-left: 8px;
+        padding-right: 8px;
+
+        @bg: lighten(@button-background-color, 10%);
+        @hover: lighten(@button-background-color-hover, 10%);
+        @selected: lighten(@button-background-color-selected, 10%);
+        @text: lighten(@text-color, 10%);
+        .btn-background(@bg, @hover, @selected, @text);
+    }
+}
+
+.settings-view {
+    select.form-control {
+        &:extend(.rad_grad);
+        border: 1px solid fade(@blue, 15%);
+        box-shadow: 0 0 3px 0 @pane;
+        &:hover {
+            border: 1px solid @pane;
+            box-shadow: 0 0 20px 0 @pane;
+        }
+    }
+    .package-card {
+        background-color: @black;
+        box-shadow: inset 0 0 10px 0 @blue;
+        transform: scale(1);
+        .ease(all);
+        &:hover {
+            background-color: @black;
+            box-shadow: inset 0 0 25px 0 @blue;
+            transform: scale(0.985);
+        }
+        .meta-controls .status-indicator {
+            background-color: @orange;
+        }
+    }
+    .section {
+        background-color: @black;
+        border-top: 1px solid fade(@blue, 40%);
+        border-top: 1px solid fade(@blue, 40%);
+    }
+    .config-menu {
+        border-right: 1px solid fade(@blue, 40%);
+        background-color: @black;
+        .panels-menu li.active a {
+            background-color: @blue;
+            box-shadow: 0 0 20px 0 @blue;
+        }
+    }
+}

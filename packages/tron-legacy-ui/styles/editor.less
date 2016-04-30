@@ -1,0 +1,72 @@
+@import "ui-variables";
+@import "ui-mixins";
+
+atom-text-editor[mini], atom-text-editor[mini]::shadow {
+    color: @blue;
+    background-color: @input-background-color;
+    border: 1px solid fade(@blue, 15%);
+    border-radius: @component-border-radius;
+    padding-left: @component-padding/2;
+    box-shadow: 0 0 3px 0 @pane;
+    .ease(all);
+
+    // .cursor { border-color: #fff; }
+    .selection .region { background-color: fade(@blue, 15%); }
+}
+
+atom-text-editor[mini].is-focused, atom-text-editor[mini].is-focused::shadow {
+    background-color: lighten(@input-background-color, 5%);
+    .selection .region {
+        background-color: @blue;
+    }
+    border: 1px solid @pane;
+    box-shadow: 0 0 20px 0 @pane;
+    // .selection .region { background-color: desaturate(@background-color-info, 50%); }
+}
+
+// FIXME: these should go in syntax themes?
+atom-text-editor, atom-text-editor::shadow {
+    &:extend(.rad_grad);
+    color: fade(@pane, 55%);
+
+    .gutter {
+        background-color: @black;
+        color: @pane;
+        border-right: 1px solid fade(@pane, 40%);
+        // border-left: 1px solid fade(@pane, 20%);
+
+        .line-number {
+            &.cursor-line {
+                .glow(@blue);
+                background-color: fade(@pane, 20%);
+            }
+
+            &.cursor-line-no-selection {
+                color: @pane;
+            }
+        }
+    }
+
+    .gutter .line-number.folded,
+    .gutter .line-number:after,
+    .fold-marker:after {
+        color: @pane;
+    }
+
+    .selection .region {
+        background-color: fade(@blue, 15%);
+    }
+    .cursor {
+        .glow(@blue);
+    }
+
+    .gutter.drop-shadow {
+        // -webkit-box-shadow: -2px 0 10px 2px #222;
+    }
+    .lines {
+        &:extend(.rad_grad);
+        .line {
+            background-color: transparent;
+        }
+    }
+}
